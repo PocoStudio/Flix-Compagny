@@ -13,6 +13,46 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
 
+    <style>
+        /* Ajoutez le style complet ici */
+        * {margin:0; padding:0; font-size:1em; box-sizing:border-box;}
+        body {font-family:sans-serif; font-size:1em; line-height:1.5;}
+        #wrapper {background:#222; color:#F1F1F1;} /* Gérer les couleurs générales */
+        #contenus {width:60%; margin:0 auto; min-height:100vh;}
+        #contenus .contenu {padding:1em 0;}
+        /* ... Ajoutez le reste de votre style ici ... */
+
+        .error {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            background: #131313;
+            color: #fff;
+            font-size: 96px;
+            font-family: 'Fira Mono', monospace;
+        }
+        .error404 {
+            animation: glitch 1s linear infinite;
+            font-size: 150px;
+        }
+        @keyframes glitch {
+            2%, 64% {
+                transform: translate(2px, 0) skew(0deg);
+            }
+            4%, 60% {
+                transform: translate(-2px, 0) skew(0deg);
+            }
+            62% {
+                transform: translate(0, 0) skew(5deg);
+            }
+        }
+
+        /* ... Ajoutez le reste de votre style ici ... */
+    </style>
+        
         <!-- Preloader -->
         <div class="preloader">
             <div class="lds-ellipsis">
